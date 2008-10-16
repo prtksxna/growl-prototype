@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/growl-style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="js/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/growl.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  
+  <body>
+    
+    <ul>
+      <li><a href="javascript:;" id="get1growl">Generate 1 Growl</a></li>
+      <li><a href="javascript:;" id="get2growl">Generate 2 Growls</a></li>
+    </ul>
+    
+    <script type="text/javascript" charset="utf-8">
+      document.observe("dom:loaded", function() {
+      	gr = new Growl;
+      	gr.display("click on the links to open Growl Updates", {image: "help.png", delay:10})
+
+      	$("get1growl").observe('click',function(event) {
+      		gr.display("helo! This is a growl update being sent by the webpage.", {image:'accept.png'})
+      	});
+      	$("get2growl").observe('click',function(event) {
+      		gr.display("You have recieved a new message by prtksxna", {image:"email.png"})
+      		gr.display("Yet another Growl update!")
+      	});
+      });
+    </script>
+  </body>
+</html>
