@@ -1,7 +1,7 @@
 var Growl = Class.create({
   initialize: function(folder){
     this.n = 0; //Its only to help in giving the ID's to DIV's
-    this.imageFolder = folder || "images/"; //Choose the images folder given by user or use default
+    this.imageFolder = folder || "images/icons/"; //Choose the images folder given by user or use default
     this.keeper = new Element('div', {'class': 'growl-keeper', 'id': 'growl_keeper' }); //Create a container where
     $(document.body).insert({bottom: this.keeper});
   },
