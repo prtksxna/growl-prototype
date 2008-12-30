@@ -6,7 +6,9 @@
 	margin-bottom: 30px;
 	min-height: 40px;
 	right: 30px;
+	border: solid 2px transparent;
 }
+.growl-alert-hover{border: solid 2px #BFBFBF}
 .growl-keeper{ /*The container that has all the Growl alerts in it*/
 	position: absolute;
 	top: 30px;

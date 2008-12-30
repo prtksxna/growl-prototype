@@ -19,7 +19,7 @@
       	gr = new Growl;
       	gr.display("click on the links to open Growl Updates", {image: "help.png", delay:10});
       	$("get1growl").observe('click',function() {
-      		gr.display("helo! This is a growl update being sent by the webpage.", {image:'accept.png', sound: true})
+      		gr.display("hello! This is a growl update being sent by the webpage.", {image:'accept.png'})
       	});
       	$("get2growl").observe('click',function(event) {
       		gr.display("You have recieved a new message by prtksxna", {image:"email.png"})
