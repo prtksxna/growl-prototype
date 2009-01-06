@@ -17,7 +17,7 @@
     <script type="text/javascript" charset="utf-8">
       document.observe("dom:loaded", function() {
       	gr = new Growl;
-      	gr.display("click on the links to open Growl Updates", {image: "help.png", delay:10});
+      	gr.display("click on the links to open Growl Updates", {image: "help.png", autohide:false});
       	$("get1growl").observe('click',function() {
       		gr.display("hello! This is a growl update being sent by the webpage.", {image:'accept.png'})
       	});
