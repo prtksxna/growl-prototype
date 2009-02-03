@@ -1,3 +1,4 @@
+// Copyright (c) 2009 Prateek Saxena, growl.js v.1.0, Tuesday, Feburary 3 2009
 var Growl = Class.create({
   initialize: function(folder){
     this.n = 0; //Its only to help in giving the ID's to DIV's
