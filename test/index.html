@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/growl-style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="../lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/png-fix.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../src/growl.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  
+  <body>
+    
+    <ul>
+      <li>
+        <p><a href="javascript:;" id="get1growl">Demo</a>
+        Update with <code>accept.png</code> and all other default options</p>
+      </li>
+      <li>
+        <p><a href="javascript:;" id="get2growl">Demo</a>
+        Two updates at one time! Wow!</p>
+      </li>
+      <li>
+        <p><a href="javscript:;" id="get3growl">Demo</a>
+        Growl update with sound.</p>
+    </ul>
+    
+    <script type="text/javascript" charset="utf-8">
+      document.observe("dom:loaded", function() {
+      	gr = new Growl;
+      	gr.display("Click on the links to open Growl Updates! I wont hide till you click me.", {image: "help.png", autohide:false});
+      	$("get1growl").observe('click',function() {
+      		gr.display("Hello! This is a growl update being sent by the webpage.", {image:'accept.png'})
+      	});
+      	$("get2growl").observe('click',function(event) {
+      		gr.display("You have recieved a new message by prtksxna", {image:"email.png"})
+      		gr.display("Yet another Growl update with default icon.")
+      	});
+      	$("get3growl").observe('click',function(event) {
+      	  gr.display("Do you hear it?", {sound:true});
+      	});
+      });
+    </script>
+  </body>
+</html>

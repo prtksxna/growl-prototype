@@ -1,0 +1,65 @@
+h1. What's this?
+
+This plugin allows you to put updates similar to the "Growl":http://growl.info/ updates on Mac OS X on web pages very easily. Put your applications updates unintrusively, letting the user know what is happening. <b>To learn how to use growl-prototype,  refer to the "Usage Wiki Page":http://wiki.github.com/prtksxna/growl-prototype/usage</b>
+
+
+h2. Installation/Usage
+
+growl-prototype includes Prototype Javascript framework, version 1.6.0.2 and script.aculo.us v1.8.1. New versions can be obtained from the links provided below.
+
+To use include all the files @lib@ folder and the @src@ folder. You can put your own images and sounds in the @src/media@ folder.
+
+To load @growl-prototype.js@, add the following to the HEAD of your page or optionally to the end of the BODY to increase efficiency and loading time - 
+
+<pre style="background: #EBF1F4;border: 1px solid #DDD;">
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/scriptaculous.js" type="text/javascript"></script>
+  <script src="/javascripts/png-fix.js" type="text/javascript"></script>
+  <script src="/javascripts/growl.js" type="text/javascript"></script>
+</pre>
+
+For detailed instructions, refer to the "Usage Wiki Page":http://wiki.github.com/prtksxna/growl-prototype/usage
+
+
+h2. The Distribution
+
+All the files related to growl-prototype are in the @src@ folder. The files that its dependent on is in the @lib@ folder.
+
+To get started and see the basic usage see the test folder. It has examples and usage of the different options provided by growl-prototype.
+
+
+h2. License
+
+Growl for Prototype, "growl-prototype" is licensed under the terms of the MIT license.
+
+<pre style="background: #EBF1F4;border: 1px solid #DDD;">
+  Copyright (c) 2009 Prateek Saxena
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation
+  files (growl-prototype), to deal in growl-prototype without
+  restriction, including without limitation the rights to use,
+  copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of it, and to permit persons to whom it
+  is furnished to do so, subject to the following
+  conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+  OTHER DEALINGS IN THE SOFTWARE.
+</pre>
+
+
+h2. Dependencies
+
+# "Prototype":http://github.com/sstephenson/prototype/tree/master
+# "Scriptaculous":http://github.com/madrobby/scriptaculous/tree/master
+# "PNG Fix for IE":http://gist.github.com/17216 by "Staaky":http://github.com/staaky
